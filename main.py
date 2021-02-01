@@ -16,6 +16,7 @@ while True:
   3: To remove a song from playlist
   4: To search for song in playlist
   5: Return the length of the playlist
+  6: Shuffle playlist
   =====================================
 
   ''')
@@ -57,7 +58,14 @@ while True:
   elif user_selection == 5:
     print(f"This set list has {playlist.length()} songs.")
 
-  # Message for invalid input
+  
+
+# ------------------------------------------
+# Stretch challange!!!!
+  elif user_selection == 6:
+    playlist.shuffle()
+    playlist.print_songs()
+
+# Message for invalid input
   else:
     print('That is not a valid option. Try again.\n')
-
